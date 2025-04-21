@@ -1,0 +1,220 @@
+.auth-form-container {
+  width:600px;
+  height:fit-content;
+  margin: 0px auto;
+  padding: 35px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  background-image: url("https://img.freepik.com/premium-photo/astronaut-runs-down-street-neon-city-80s-background-retro-style-futuristic-concept-3d-illustration_250994-3217.jpg?semt=ais_hybrid&w=740");
+  background-size: cover;
+}
+
+.auth-form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.7rem;
+  text-align: center;
+  color:white;
+}
+.auth-form-container input:first-child{
+  width: 40%;
+  padding: 2px;
+  margin: 5px ;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  font-size: 1rem;
+  background: transparent;
+  position: absolute;
+  right: 120px;
+}
+.auth-form-container input{
+  
+  width: 41%;
+  padding: 2px;
+  margin: 5px ;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  font-size: 1rem;
+  background: transparent;
+  position: absolute;
+  right: 20px;
+  color:white;
+  background: transparent;
+  outline :none;
+  background-color: transparent;
+  margin-top: 0;
+} 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.roll-input::-webkit-inner-spin-button,
+.roll-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.roll-input {
+  -moz-appearance: textfield;
+}
+
+
+
+.auth-form-container select{
+  width: 41%;
+  padding: 2px;
+  margin: 5px ;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  font-size: 1rem;
+  background: transparent;
+  position: absolute;
+  right: 20px;
+  color:white;
+  background: transparent;  
+  outline:none;
+  margin-top: 0;
+}
+
+.auth-form-container select option{
+  color:black;
+}
+
+.auth-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 95%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.auth-btn:hover {
+  background-color: #0056b3;
+}
+
+.auth-form-container form{
+  /* padding: 10px 20px; */
+  padding-left: 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  gap:10px;
+  backdrop-filter: blur(20px);
+  color:white;
+  height: 350px;
+ 
+}
+
+.login-btn{
+  margin-top: 40px;
+}
+
+.form-animation{
+  display: flex;
+  gap:20px;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+
+
+.auth-form-container p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.auth-form-container a {
+  color: rgb(252, 248, 248);
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 0px 24px black,
+          -0px -0px 10px black;
+  
+  
+
+}
+
+.auth-form-container a:hover {
+  text-decoration: underline;
+}
+
+.switch-page{
+  color:white;
+  font-size: 55px;
+
+}
+.error {
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.auth-link {
+  font-size: 1.5rem;
+  color: #007bff;
+  text-decoration: none;
+  
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+
+.animated-text {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+   margin-top:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  
+}
+
+.animated-text p {
+  font-size: 1.5rem; /* ← Change this to whatever size you want */
+  color: white;
+  animation: fadeText 1s ease-in-out;
+
+  
+}
+
+
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+
+

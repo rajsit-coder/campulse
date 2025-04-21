@@ -1,0 +1,133 @@
+.event-details-container {
+    max-width: 800px;
+    margin: 0rem auto;
+    margin-bottom: 5px;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+    box-shadow: 10px 10px 30px, -10px -10px 30px #ffffff;
+}
+
+.event-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.event-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.event-info p,
+.tags p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.tags {
+    margin-bottom: 1.5rem;
+}
+
+.tags p strong {
+    color: #444;
+}
+
+.event-actions {
+    margin: 10px;
+    display: flex;
+    gap: 1rem;
+}
+
+.event-image {
+    background-color: red;
+}
+
+.like-btn,
+.interested-btn {
+    background-color: #000a2899;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    min-width: 80px;
+    transition: background-color 0.3s ease;
+}
+
+.like-btn:hover,
+.interested-btn:hover {
+    background-color: #0056b3;
+}
+
+.like-btn.liked {
+    background-color: #e91e63;
+}
+
+.comments-section {
+    margin-top: 2rem;
+}
+
+.comments-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+.comments-section button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comments-section button:hover {
+    background-color: #218838;
+}
+
+.comments-list {
+    margin-top: 1rem;
+}
+
+.comment-item {
+    background-color: #f5f5f5;
+    padding: 0.6rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #007bff;
+}
+
+.poll-section {
+    margin-top: 2rem;
+}
+
+.poll-section h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.poll-section p {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.poll-section label {
+    margin-left: 0.5rem;
+    color: #555;
+}
+
+.poll-section input[type="radio"] {
+    margin-right: 0.5rem;
+}

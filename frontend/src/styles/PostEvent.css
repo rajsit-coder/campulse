@@ -1,0 +1,143 @@
+.post-event-container {
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 25px;
+    margin-bottom: 5px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 30px, -10px -10px 30px white;
+}
+
+.post-event-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.event-form-pe .form-group,
+.event-form-pe .form-row {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.event-form-pe label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.event-form-pe input[type="text"],
+.event-form-pe input[type="date"],
+.event-form-pe input[type="time"],
+.event-form-pe input[type="file"],
+.event-form-pe select,
+.event-form-pe textarea {
+    min-width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.tel {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.club-select {
+    width: 100% !important;
+}
+
+.PollType-select {
+    width: 100% !important;
+}
+
+.date-select {
+    width: 90% !important;
+}
+
+.time-select {
+    width: 92% !important;
+}
+
+.event-form-pe textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.poll-options-section input {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.add-option-btn {
+    display: inline-block;
+    margin-top: 8px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-option-btn:hover {
+    background-color: #2980b9;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-buttons button:hover {
+    background-color: #27ae60;
+}
+
+.form-buttons button[type="button"] {
+    background-color: #e74c3c;
+}
+
+.form-buttons button[type="button"]:hover {
+    background-color: #c0392b;
+}
+
+.number-member{
+    padding:8px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgb(218, 207, 207);
+}
+
+
+.number-member::-webkit-inner-spin-button,
+.number-member::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

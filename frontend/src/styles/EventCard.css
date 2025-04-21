@@ -1,0 +1,58 @@
+.event-cards {
+  width:20vw;
+  border: 1px solid #090909;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color:#9e9c9cf1;
+  padding:5px;
+}
+.event-details {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.event-actions{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.like-action{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.like-action span{
+  color:rgb(248, 244, 244)
+}
+
+.interested-btn {
+  background-color: #007bff;
+  color: #130202;
+  border: none;
+  cursor: pointer;
+}
+
+.interested-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.view-pdf-btn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.view-pdf-btn:hover {
+  background-color: #303f9f;
+}

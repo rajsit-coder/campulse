@@ -1,0 +1,117 @@
+.Main-DashBoard {
+    min-height: 695px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.DashBoard-Card {
+    width: 280px;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+}
+
+.event-cards-dash {
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+    background: rgba(0, 10, 40, 0.6);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    color: #e0f7fa;
+    min-height: 200px;
+    padding: 7px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.event-cards-dash img {
+    background-color: greenyellow;
+    height: 200px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: rgb(5, 5, 5);
+    font-size: 0.9rem;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: #cc0000;
+}
+
+.dashboard-p {
+    font-size: 0.9rem;
+}
+
+.dashboard-btn {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.dashboard-edit {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: #00FFC6;
+    color: #0B0B22;
+}
+
+.dashboard-edit:hover {
+    background-color: #00e5b3;
+}
+
+.dashboard-delete {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: #FF4B91;
+    color: white;
+}
+
+.dashboard-delete:hover {
+    background-color: #ff2f78;
+}
+
+.dashboard-response {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: #8AB6FF;
+    color: #0B0B22;
+}
+
+.dashboard-response:hover {
+    background-color: #74A2F6;
+}

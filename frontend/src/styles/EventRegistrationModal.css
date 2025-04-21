@@ -1,0 +1,110 @@
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+  
+
+    /* background: linear-gradient(135deg, #00f0ff, #ff00e0); */
+    box-shadow: 0 0 12px #00f0ff, 0 0 24px #ff00e0;
+
+    /* box-shadow: 8px 8px 15px #8a8585, -8px -8px 15px #ffffff; */
+}
+
+.modal-content label{
+    font-weight: 600;
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.modal-content input,
+.modal-content button {
+    border-radius: 5px;
+    display: block;
+    width: 95%;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid grey;
+    margin-left: 15px;
+   
+}
+
+.payment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 380px;
+    width:250px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+ 
+    /* background-color: greenyellow; */
+}
+
+.payment p{
+    margin-right: 115px!important;
+    white-space: nowrap;
+
+    font-weight: bold;
+    margin-right: 15px;
+    /* background-color: aqua; */
+    height: 10%;
+}
+
+.payment-img{
+    border: 1px solid black;
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+     height: 90%;
+     width: 100%;
+    /* background-color: rgb(245, 157, 157); */
+}
+
+.payment-img img{
+    height: 100%;
+    width: 100%;
+}
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-right: 12px;
+}
+
+.modal-buttons-submit{
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #1be94e;
+    color: white;
+}
+
+.modal-buttons-cancel{
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+.member-fields {
+    margin-bottom: 8px;
+}

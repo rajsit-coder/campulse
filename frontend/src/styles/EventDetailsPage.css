@@ -1,0 +1,196 @@
+/* src/styles/EventDetails.css */
+.event-details-container {
+  padding: 20px;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+ 
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.event-image {
+  border:1px solid black;
+  /* width: 300px; */
+  width:98%;
+  height:80vh;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 10px;
+  /* background-color: red; */
+}
+
+.tags{
+  margin-top: 30px;
+  margin-left: 8px;
+}
+.event-info{
+  padding: 0;
+  /* background-color: aqua; */
+  margin-left: 8px;
+
+}
+
+.event-info p {
+  
+  /* margin-right:60px!important; */
+  font-size: 1rem;
+  /* margin: 0; */
+  color: #333;
+  /* background-color: red; */
+}
+
+.event-date-time,
+.event-club {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.event-tags {
+  margin-top: 10px;
+}
+
+.event-tag {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.event-description {
+  padding-left:8px;
+  font-size: 1.2rem!important;
+  
+  margin-bottom: 20px!important;
+  color: #333;
+  /* background-color: aqua; */
+}
+
+.event-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.view-pdf-btn{
+  margin-left: 10px;
+}
+
+.like-button,
+.interested-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button:hover,
+.interested-button:hover {
+  background-color: #0056b3;
+}
+
+
+.register-event-btn button{
+  margin-left: 10px;
+  background-color: #1be94e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 97.5%;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.event-comments {
+  margin-top: 30px;
+}
+
+.event-comments h3 {
+  margin-left: 13px!important;
+  font-size: 1.3rem;
+}
+
+.comment {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.comments-section textarea{
+  margin-left: 10px;
+  width: 95%!important;
+
+}
+
+.comments-section h3{
+  margin-left: 10px;
+}
+
+.comments-section button {
+  margin-left: 10px;
+}
+
+.poll-section {
+  margin-left: 8px;
+  line-height: 20px;
+  margin-top: 10px!important;
+}
+
+
+.poll-section p{
+  font-size: 1.5rem;
+}
+
+.poll-section h3{
+  text-decoration: underline;
+}
+
+.event-polls h3 {
+  font-size: 1.3rem;
+}
+
+.poll {
+  margin-bottom: 20px;
+ 
+}
+
+.poll-results h4{
+  color:red;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.poll-results p{
+  font-size: 1rem;
+}
+.poll-options {
+  margin-top: 10px;
+}
+
+.poll-options label {
+  display: block;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.poll-options input[type="radio"] {
+  margin-right: 10px;
+}

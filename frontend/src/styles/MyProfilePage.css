@@ -1,0 +1,52 @@
+/* src/styles/MyProfilePage.css */
+
+.my-profile-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #e0e5ec;
+    /* Soft background for better effect */
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px, -10px -10px 30px white;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.my-profile-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+}
+
+.profile-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.profile-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-section ul li {
+    background: #f0f0f3;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    /* Neumorphism shadow */
+    box-shadow: 5px 5px 5px #a8aeb7, -8px -8px 16px #d0caca;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-section ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 12px #d1d9e6, -4px -4px 12px #ffffff;
+}
+
+.profile-section ul li p {
+    font-size: 0.9em;
+    color: #555;
+}
