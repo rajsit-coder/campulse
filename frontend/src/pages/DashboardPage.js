@@ -3,6 +3,10 @@ import "../styles/Dashboard.css";
 import { useNavigate } from "react-router-dom";
 
 const DashboardPage = () => {
+    const truncateText = (text, maxLength) => {
+    if (!text) return "";
+    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  };
     const [events, setEvents] = useState([]);
     const navigate = useNavigate();
 
@@ -79,7 +83,7 @@ const DashboardPage = () => {
                     strong > Club: < /strong> {event.club}{" "} <
                     strong > Type: < /strong> {event.tags || "General"} <
                     /p> <
-                    p className="dashboard-p" > {event.description} < /p> <
+                    p className="dashboard-p" > {truncateText(event.description, 100)} < /p> <
                     div className="dashboard-btn" >
                                                             <
                     button className="dashboard-edit"
