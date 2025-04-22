@@ -9,6 +9,11 @@ const LandingPage = () => {
         return shuffled.slice(0, count);
     };
 
+    const truncateText = (text, maxLength) => {
+    if (!text) return "";
+    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  };
+
     useEffect(() => {
         const fetchEvents = async () => {
             try {
@@ -39,7 +44,7 @@ const LandingPage = () => {
                             <div key={event._id} className="event-card">
                                 <h3>{event.title}</h3>
                                 <p>{event.date} | {event.time}</p>
-                                <p>{event.description}</p>
+                                <p>{truncateText(event.description, 100)}</p>
                             </div>
                         ))}
                     </div>
