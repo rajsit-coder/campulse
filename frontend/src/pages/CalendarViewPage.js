@@ -7,7 +7,10 @@ const CalendarViewPage = () => {
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [allEvents, setAllEvents] = useState([]);
     const [loading, setLoading] = useState(true);
-
+const truncateText = (text, maxLength) => {
+    if (!text) return "";
+    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  };
     // Fetch events from backend
     useEffect(() => {
         const fetchEvents = async () => {
@@ -53,7 +56,7 @@ const CalendarViewPage = () => {
                     eventsForSelectedDate.map((event, index) => (
                         <div key={index} className="event-card">
                             <h3>{event.title}</h3>
-                            <p>{event.description}</p>
+                            <p>{truncateText(event.description, 100)}</p>
                             <small>{event.club} - {event.tags}</small>
                         </div>
                     ))
