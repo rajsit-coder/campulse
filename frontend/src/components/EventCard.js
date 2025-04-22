@@ -2,6 +2,10 @@ import React from "react";
 import "../styles/EventCard.css";
 
 const EventCard = ({ event, onLike, onInterested }) => {
+  const truncateText = (text, maxLength) => {
+    if (!text) return "";
+    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  };
   const combinedDateTime = new Date(`${event.date}T${event.time}`);
 
   const formattedDateTime = combinedDateTime.toLocaleString("en-IN", {
@@ -43,7 +47,7 @@ const EventCard = ({ event, onLike, onInterested }) => {
           <strong>End Time:- </strong>
           {event.endtime ? convertTo12Hour(event.endtime) : "4:00 PM"}
         </p>
-        <p>{event.description}</p>
+        <p>{truncateText(event.description, 200)}</p>
 
         <div className="event-actions">
           <button
