@@ -5,7 +5,10 @@ import { useNavigate } from "react-router-dom";
 const AdminPost = () => {
     const [events, setEvents] = useState([]);
     const navigate = useNavigate();
-
+const truncateText = (text, maxLength) => {
+    if (!text) return "";
+    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  };
     const fetchEvents = async () => {
         try {
             const res = await fetch("https://campulse.onrender.com/api/events/all");
@@ -71,7 +74,7 @@ const AdminPost = () => {
                     strong > Club: < /strong> {event.club}{" "} <
                     strong > Type: < /strong> {event.tags || "General"} <
                     /p> <
-                    p className="dashboard-p" > {event.description} < /p> <
+                    p className="dashboard-p" > {truncateText(event.description, 100)} < /p> <
                     div className="dashboard-btn" >
                                                             <
                     button className="dashboard-edit"
