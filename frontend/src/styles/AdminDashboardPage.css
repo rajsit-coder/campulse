@@ -20,8 +20,15 @@ h2 {
     border: 1px solid #ccc;
 }
 
-.user-list {
-    color: wheat;
+.user-list td {
+    color: rgb(255,255,255);
+    margin-top: 30px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.user-list tr {
+    color: rgb(0,0,0);
     margin-top: 30px;
     max-width: 100%;
     overflow-x: auto;
